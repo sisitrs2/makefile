@@ -5,16 +5,20 @@
 #include <iostream>
 #include "FileEdit.h"
 #include "Directory.h"
+#include "stdio.h"
 
 using std::cout;
 using std::endl;
 
 void makefile(const Directory& dir);
 const std::string getMFilePath(const std::string& dirPath);
+void removeExistingMFile(const std::string& dirPath);
 
 int main(int argc, char* argv[])
 {
-    Directory dir(argc > 1 ? argv[1] : "");
+    Directory dir(argc > 1 ? argv[1] : "./");
+
+	removeExistingMFile(dir.getDir());
 	makefile(dir);
 
     return 0;
@@ -59,3 +63,17 @@ const std::string getMFilePath(const std::string& dirPath)
 	return path;
 }
 
+void removeExistingMFile(const std::string& dirPath)
+{
+	int deleted;
+	std::string path = dirPath;
+	std::string mpath, Mpath;
+	unsigned int lastChar = path.length() - 1;
+
+	if(path[lastChar] != '/')
+		path += '/';
+	mpath = path + "makefile";
+	Mpath = path + "Makefile";
+	deleted = remove(mpath.c_str());
+	deleted = remove(Mpath.c_str());
+}
