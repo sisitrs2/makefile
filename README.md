@@ -46,3 +46,16 @@ Open a terminal in the makefile project path, and run
 $ sudo chmod +x deleteCmd
 $ sudo ./deleteCmd
 ```
+
+## Error with compilation
+You probably have a relatively old compiler. to update it just run this lines:
+```
+$ sudo apt-get update
+$ sudo apt-get install gcc-7 g++-7
+$ sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-7 60
+```
+To check it worked run
+```
+$ g++ -v
+```
+If you can see bottom line the gcc is running version 7 you are good to go.
