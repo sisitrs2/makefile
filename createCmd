@@ -1,0 +1,18 @@
+#!/bin/bash
+
+createCmd(){
+	make
+
+	#copy exe to new location.
+	cp ./mkfile /usr
+	echo "mkfile was added to the /usr directory"
+	
+	make clear
+
+	cp makemake /usr/bin
+	echo "makemake command was added."
+
+	return
+}
+
+createCmd

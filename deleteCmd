@@ -1,0 +1,16 @@
+#!/bin/bash
+
+deleteCmd(){
+	
+	cd /usr
+	sudo rm mkfile
+	echo "mkfile was deleted from the /usr directory"
+	
+	cd /usr/bin
+	sudo rm makemake
+	echo "makemake command has been removed."
+	
+	return
+}
+
+deleteCmd

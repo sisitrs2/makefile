@@ -1,6 +1,6 @@
 
-run: Directory.o FileEdit.o main.o
-	g++ Directory.o FileEdit.o main.o -o run
+mkfile: Directory.o FileEdit.o main.o
+	g++ Directory.o FileEdit.o main.o -o mkfile
 
 Directory.o: Directory.cpp Directory.h
 	g++ -c Directory.cpp
@@ -12,4 +12,4 @@ main.o: main.cpp
 	g++ -c main.cpp
 
 clear:
-	rm *.o run
+	rm *.o mkfile
