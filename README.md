@@ -25,11 +25,11 @@ Now you will find in the directory an executable named `mkfile`, you can move it
 ```
 $ ./mkfile path/to/cpp/project/
 ```
-<br>This is not a comfortable way to create a make a make file, so bare with me in the last few steps.
+<br>This is not a comfortable way to create a make file, so bare with me in the last few steps.
 #### step 4
 In the makefile project you can find three bash scripts:<br>
 `createCmd` , `deleteCmd` and `makemake` .<br>
-Those files contain only a few lines of code each so you can check their innocence out if you want before the next step.<br>
+Those files contain only few lines of code each so you can check their innocence out if you want before the next step.<br>
 Open a terminal in the makefile project path, and run
 ```
 $ sudo chmod +x createCmd
