@@ -16,12 +16,12 @@ void removeExistingMFile(const std::string& dirPath);
 
 int main(int argc, char* argv[])
 {
-    Directory dir(argc > 1 ? argv[1] : "./");
+	Directory dir(argc > 1 ? argv[1] : "./");
 
 	removeExistingMFile(dir.getDir());
 	makefile(dir);
 
-    return 0;
+	return 0;
 }
 
 
