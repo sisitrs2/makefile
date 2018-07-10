@@ -4,8 +4,8 @@ createCmd(){
 	make
 
 	#copy exe to new location.
-	cp ./mkfile /usr
-	echo "mkfile was added to the /usr directory"
+	cp ./mkfile /usr/local/bin
+	echo "mkfile was added to the /usr/local/bin directory"
 	
 	make clear
 

@@ -2,9 +2,9 @@
 
 deleteCmd(){
 	
-	cd /usr
+	cd /usr/local/bin
 	sudo rm mkfile
-	echo "mkfile was deleted from the /usr directory"
+	echo "mkfile was deleted from the /usr/local/bin directory"
 	
 	cd /usr/bin
 	sudo rm makemake
