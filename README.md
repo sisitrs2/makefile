@@ -10,7 +10,8 @@ Open a terminal in the makefile project path, and run
 $ sudo chmod +x createCmd
 $ sudo ./createCmd
 ```
-Congratulations! now you can create a makefile in any directory for any c++ project by typing `makemake` in a terminal located on the project path.
+Congratulations! now you can create a makefile in any directory for any c++ project by typing `makemake` in a terminal located on the project path.<br>
+You can use the command `make clear` to delete the .o files and the executable (.out) file.
 
 ### Slow and safe
 #### step 1
@@ -36,7 +37,8 @@ $ sudo ./createCmd
 ```
 This will create a new command (`makemake`) that will allow you to create a makefile.
 
-Now you can create a makefile in any directory for any c++ project by typing `makemake` in a terminal located on the project path.
+Now you can create a makefile in any directory for any c++ project by typing `makemake` in a terminal located on the project path.<br>
+You can use the command `make clear` to delete the .o files and the executable (.out) file (after `make` command).
 
 ## Uninstall
 Open a terminal in the makefile project path, and run
