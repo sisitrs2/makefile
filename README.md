@@ -8,7 +8,7 @@ That's what this program allow you to do. By the end of this 10 minutes you coul
 Open a terminal in the makefile project path, and run
 ```
 $ sudo chmod +x createCmd
-$ sudo createCmd
+$ sudo ./createCmd
 ```
 Congratulations! now you can create a makefile in any directory for any c++ project by typing `makemake` in a terminal located on the project path.
 
@@ -32,7 +32,7 @@ Those files contain only a few lines of code each so you can check their innocen
 Open a terminal in the makefile project path, and run
 ```
 $ sudo chmod +x createCmd
-$ sudo createCmd
+$ sudo ./createCmd
 ```
 This will create a new command (`makemake`) that will allow you to create a makefile.
 
@@ -42,5 +42,5 @@ Now you can create a makefile in any directory for any c++ project by typing `ma
 Open a terminal in the makefile project path, and run
 ```
 $ sudo chmod +x deleteCmd
-$ sudo deleteCmd
+$ sudo ./deleteCmd
 ```
